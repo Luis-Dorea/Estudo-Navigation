@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Estudo Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tiet_name">Name</string>
+    <string name="tiet_age">Age</string>
+    <string name="mbtn_next">Next</string>
+    <string name="tiet_street">Street</string>
+    <string name="tiet_number">Number</string>
+</resources>

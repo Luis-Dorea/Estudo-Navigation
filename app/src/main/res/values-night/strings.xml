@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tiet_name">Name</string>
+    <string name="tiet_age">Age</string>
+    <string name="tiet_street">Street</string>
+    <string name="tiet_number">Number</string>
+</resources>
