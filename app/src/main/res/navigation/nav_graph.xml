@@ -18,7 +18,27 @@
         android:id="@+id/addressFragment"
         android:name="br.com.doreadev.estudonavigation.fragments.AddressFragment"
         android:label="fragment_address"
-        tools:layout="@layout/fragment_address" />
+        tools:layout="@layout/fragment_address">
+
+        <argument
+            android:name="model"
+            app:argType="br.com.doreadev.estudonavigation.models.PersonModel" />
+        <action
+            android:id="@+id/go_to_resumeFragment"
+            app:destination="@id/resumeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resumeFragment"
+        android:name="br.com.doreadev.estudonavigation.fragments.ResumeFragment"
+        android:label="fragment_resume"
+        tools:layout="@layout/fragment_resume">
+
+        <argument
+            android:name="model"
+            app:argType="br.com.doreadev.estudonavigation.models.PersonModel" />
+
+    </fragment>
 
 
 </navigation>

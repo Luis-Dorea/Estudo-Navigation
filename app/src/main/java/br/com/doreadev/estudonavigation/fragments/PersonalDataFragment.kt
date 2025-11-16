@@ -30,11 +30,13 @@ class PersonalDataFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.mbtnNextId.setOnClickListener {
-            val person = PersonModel(
+            val model = PersonModel(
                 name = binding.tilLayoutNameId.text,
                 age = binding.tilLayoutAgeId.text.toInt()
             )
-            findNavController().navigate(R.id.go_to_addressFragment)
+
+            val directions = PersonalDataFragmentDirections.goToAddressFragment(model)
+            findNavController().navigate(directions)
             //Mandar os dados para outro fragment
         }
     }
